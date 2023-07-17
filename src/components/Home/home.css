@@ -1,0 +1,52 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+
+  text-transform: capitalize;
+  color: white;
+  padding-bottom: 4rem;
+}
+.container {
+  width: 30%;
+  padding-right: 5rem;
+}
+.container div {
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+.container div input {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 1.5em;
+  outline: none;
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
+button {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: "Pacifico", cursive;
+
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: rgb(134, 170, 238);
+  padding: 0.5rem;
+}
