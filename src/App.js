@@ -10,8 +10,6 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Hello meet</h1>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/room/:roomId" element={<Room />} />

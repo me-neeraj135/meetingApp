@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import { AppID, ServerSecret } from "../helper";
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
 
+import "./room.css";
+
 function Room() {
   const { roomId } = useParams();
 
@@ -44,7 +46,7 @@ function Room() {
   };
 
   return (
-    <div>
+    <div className="room">
       <div ref={myMeeting} />
     </div>
   );

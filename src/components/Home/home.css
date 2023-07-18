@@ -7,8 +7,11 @@
 
 .home {
   width: 100vw;
-  display: flex;
-  justify-content: flex-end;
+  height: 100vh;
+  background-image: url("https://i.imgur.com/PnWsJmA.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -18,15 +21,15 @@ h1 {
 
   text-transform: capitalize;
   color: white;
-  padding-bottom: 4rem;
 }
 .container {
-  width: 30%;
-  padding-right: 5rem;
+  display: flex;
+  justify-content: flex-end;
 }
 .container div {
+  width: 35%;
   border-radius: 0.3rem;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .container div input {
   width: 100%;
@@ -49,4 +52,25 @@ button {
   border-radius: 1.5rem;
   background-color: rgb(134, 170, 238);
   padding: 0.5rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: url("https://i.imgur.com/PnWsJmA.png");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container div {
+    width: 100%;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    padding: 3rem 0;
+  }
 }
